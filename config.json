@@ -1,0 +1,32 @@
+{
+  "rss_sources": [
+    {
+      "name": "Example Tech News",
+      "url": "https://example.com/rss",
+      "enabled": true,
+      "category": "tech"
+    }
+  ],
+  "posting": {
+    "posts_per_day": {
+      "min": 5,
+      "max": 10
+    },
+    "active_hours": {
+      "start": 9,
+      "end": 22
+    },
+    "min_delay_between_posts_minutes": 30,
+    "skip_probability": 0.1
+  },
+  "ai": {
+    "model": "openai/gpt-4o-mini",
+    "max_tokens": 1000,
+    "temperature": 0.7
+  },
+  "content": {
+    "max_post_length": 1000,
+    "include_source_link": true,
+    "translate_to_russian": true
+  }
+}
